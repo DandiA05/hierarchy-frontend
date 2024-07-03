@@ -2,23 +2,18 @@
 
 import AsyncSelectForm from '@components/atoms/Form/AsyncSelectForm'
 import InputForm from '@components/atoms/Form/InputForm'
-import { yupResolver } from '@hookform/resolvers/yup'
 import { IOptions } from '@interfaces/listInterfaces'
 import { GetListBarangs, GetListNegaras, GetListPelabuhans } from '@services/api/api'
 import formatCurrency from '@utils/helper/Currency'
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import * as Yup from 'yup'
 
-const validationSchema = Yup.object().shape({
-  columns: Yup.array().of(Yup.object().shape({})),
-})
 export default function Home() {
   const [optionNegara, setOptionNegara] = useState<IOptions[]>([])
   const [optionPelabuhan, setOptionPelabuhan] = useState<IOptions[]>([])
   const [optionBarang, setOptionBarang] = useState<any[]>([])
 
-  const { control, watch, setValue, resetField } = useForm<any>({
+  const { control, watch, setValue } = useForm<any>({
     mode: 'all',
   })
 

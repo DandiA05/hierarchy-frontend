@@ -1,7 +1,5 @@
 'use client'
 
-import images from '@assets/images'
-import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
 import moment from 'moment'

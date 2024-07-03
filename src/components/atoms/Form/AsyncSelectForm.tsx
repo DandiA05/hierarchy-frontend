@@ -1,7 +1,6 @@
 import React from 'react'
 import { Autocomplete, FormLabel, TextField } from '@mui/material'
 import { Control, Controller } from 'react-hook-form'
-import { debounce } from 'lodash'
 
 interface Data {
   value: string

@@ -1,7 +1,6 @@
 import React, { HTMLProps } from 'react'
 import { FormLabel, InputAdornment, OutlinedInput } from '@mui/material'
 import { Control, Controller } from 'react-hook-form'
-import ErrorOutlineOutlinedIcon from '@mui/icons-material/ErrorOutlineOutlined'
 
 interface Props extends HTMLProps<HTMLDivElement> {
   label?: string
