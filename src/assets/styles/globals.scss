@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './partials/input';
+
+@layer components {
+  .menu-selection {
+    @apply bg-[#E8F6FF] text-[#008DEB] font-bold;
+  }
+
+  .custom-shadow {
+    @apply shadow-black;
+  }
+
+  .navigation-menu {
+    @apply min-w-[100px] py-5 flex hover:menu-selection px-5 items-center;
+  }
+}
